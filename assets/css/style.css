@@ -1,0 +1,594 @@
+.first-section {
+    height: 110vh;
+    overflow: hidden;
+    background-color: rgba(0, 0, 0, 0.4);
+    background-image: linear-gradient(7deg, rgba(0, 0, 0, 0.8500) 10.00%, rgba(0, 0, 0, 0.8465) 17.25%, rgba(0, 0, 0, 0.8361) 24.50%, rgba(0, 0, 0, 0.8187) 31.75%, rgba(0, 0, 0, 0.7944) 39.00%, rgba(0, 0, 0, 0.7632) 46.25%, rgba(0, 0, 0, 0.7250) 53.50%, rgba(0, 0, 0, 0.6868) 60.75%, rgba(0, 0, 0, 0.6556) 68.00%, rgba(0, 0, 0, 0.6312) 75.25%, rgba(0, 0, 0, 0.6139) 82.50%, rgba(0, 0, 0, 0.6035) 89.75%, rgba(0, 0, 0, 0.6000) 97.00%), url(https://assets.nflxext.com/ffe/siteui/vlv3/93da5c27-be66-427c-8b72-5cb39d275279/94eb5ad7-10d8-4cca-bf45-ac52e0a052c0/IN-en-20240226-popsignuptwoweeks-perspective_alpha_website_large.jpg);
+    width: 100%;
+    position: relative;
+    background-size: cover;
+    background-repeat: no-repeat;
+    max-width: 120rem;
+    /* margin: 0 0 -16rem 0; */
+}
+
+header {
+    padding: 0 3rem;
+    height: 7.5rem;
+    margin: auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-image: linear-gradient(
+            180deg,
+            rgba(0, 0, 0, 0.8000) 0.000%, rgba(0, 0, 0, 0.7889) 8.333%, rgba(0, 0, 0, 0.7556) 16.67%, rgba(0, 0, 0, 0.7000) 25.00%, rgba(0, 0, 0, 0.6222) 33.33%, rgba(0, 0, 0, 0.5222) 41.67%, rgba(0, 0, 0, 0.4000) 50.00%, rgba(0, 0, 0, 0.2778) 58.33%, rgba(0, 0, 0, 0.1778) 66.67%, rgba(0, 0, 0, 0.1000) 75.00%, rgba(0, 0, 0, 0.04444) 83.33%, rgba(0, 0, 0, 0.01111) 91.67%, rgba(0, 0, 0, 0.000) 100.0%);
+}
+
+header div {
+    display: inline-block;
+}
+
+.netflix-logo-svg {
+    fill: var(--primary-color);
+    height: 2.5rem;
+}
+
+.lang-text-svg {
+    fill: var(--text-color);
+}
+
+.lang-select {
+    position: relative;
+    display: grid;
+    align-items: center;
+}
+
+.lang {
+    padding: 0.3rem 2.2rem;
+    appearance: none;
+    background-color: transparent;
+    color: var(--white);
+    border: 1px solid var(--border-color);
+    border-radius: 0.25rem;
+    font-weight: 500;
+    font-size: 1rem;
+}
+
+#lang option[value="option-1"],
+#lang option[value="option-2"] {
+    color: black;
+}
+
+
+.lang-svg {
+    color: var(--white);
+    fill: var(--white);
+    position: absolute;
+    pointer-events: none;
+    z-index: 10;
+}
+
+.multilingual-svg {
+    left: 0.8rem;
+    top: 0.5rem;
+}
+
+.caret-down-svg {
+    right: 0.8rem;
+    top: 0.5rem;
+}
+
+.right-nav {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 0.2rem;
+}
+
+#email{
+    border: solid 1px green;
+}
+
+.validation-email{
+    
+}
+
+.sign-in {
+    height: 100%;
+    padding: .3rem;
+    padding-inline: 1.2rem;
+    margin-left: 1rem;
+    font-weight: 500;
+    font-size: 1rem;
+}
+
+
+/* promo-text-wrapper */
+
+.promo {
+    height: 100%;
+    width: auto;
+    position: relative;
+    display: flex;
+    justify-content: center;
+}
+
+.promo-wrapper {
+    padding-top: 10%;
+}
+
+.promo-content {
+    max-width: 40rem;
+    /* margin-bottom: 1rem; */
+    text-align: center;
+}
+
+.get-started {
+    font-size: 1.5rem;
+    font-weight: 600;
+}
+
+.get-started-svg {
+    margin-bottom: -.2rem;
+}
+
+/* email form */
+
+.email-form-action {
+    padding-top: 16px;
+    display: grid;
+    grid-template-columns: 2fr 1fr;
+    gap: 0.5rem;
+}
+
+.email {
+    padding: 0.8rem;
+    font-size: 1rem;
+    background-color: rgba(32, 30, 30, 0.5);
+    border: 1px solid var(--border-color);
+    width: 100%;
+    height: 100%;
+    color: var(--text-color);
+    border-radius: 0.25rem;
+}
+
+.email::placeholder {
+    font-size: 1rem;
+    font-weight: 500;
+    color: var(--text-secondary-color);
+}
+
+.get-started {
+    height: auto;
+    padding: 0.8rem;
+}
+
+/* curve */
+.curve {
+    position: relative;
+    height: 4.25rem;
+    z-index: 5;
+    overflow-x: hidden;
+    margin-top: -2rem;
+    max-width: 120rem;
+    margin-inline: auto;
+}
+
+.curve-container {
+    position: absolute;
+    top: 0;
+    height: 100%;
+    display: flex;
+    border: solid 0.25rem transparent;
+    border-top-left-radius: 50% 100%;
+    border-top-right-radius: 50% 100%;
+    border-bottom: none;
+    background: radial-gradient(50% 500% at 50% -420%,
+    rgba(64, 97, 231, 0.4) 80%,
+    rgba(0, 0, 0, 0.1) 100%), black;
+    background-clip: padding-box;
+}
+
+.curve-container:before {
+    content: '';
+    position: absolute;
+    border-radius: inherit;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    margin-top: -0.25rem;
+    z-index: -1;
+    background: linear-gradient(
+            to right,
+            rgba(33, 13, 22, 1) 16%,
+            rgba(184, 40, 105, 1),
+            rgba(229, 9, 20, 1),
+            rgba(184, 40, 105, 1),
+            rgba(33, 13, 22, 1) 84%
+    );
+}
+
+/* second section */
+.second-section {
+    position: relative;
+    height: auto;
+    width: auto;
+    max-width: 120rem;
+    margin: auto;
+}
+
+
+.plans-to-suit {
+    display: flex;
+    flex-direction: column;
+    background:  linear-gradient(127deg, #43172b, #230a25) ;
+    padding: 2rem 3rem;
+    border-radius: 1rem;
+    margin-bottom: 2rem;
+}
+
+.plans-to-suit:hover{
+    transform: scale(1.05);
+    transition: all ease-in-out 0.3s;
+}
+
+.plans-to-suit h2 {
+    font-size: xx-large;
+    font-weight: 700;
+}
+
+.plans-to-suit p {
+    font-size: 1.25rem;
+    font-weight: 500;
+    color: var(--text-secondary-color);
+    margin-top: .5rem;
+}
+
+#trending-region, #trending-movies {
+    appearance: none;
+    background-color: transparent;
+    color: var(--white);
+    border: 1px solid var(--border-color);
+    border-radius: 0.25rem;
+    font-weight: 500;
+    font-size: 1rem;
+}
+
+#trending-region {
+    padding: 0.5rem 3.2rem 0.5rem 0.8rem;
+}
+
+#trending-movies {
+    padding: 0.5rem 3.5rem 0.5rem 0.8rem;
+}
+
+.country-select {
+    position: relative;
+    display: inline-block;
+    background-color: rgba(32, 30, 30, 0.5);
+    border-radius: 0.25rem;
+}
+
+.country-select-caret-down-svg {
+    position: absolute;
+    top: 0.6rem;
+    right: 1rem;
+    pointer-events: none;
+}
+
+.movie-select-caret-down-svg {
+    position: absolute;
+    top: 0.6rem;
+    right: 1rem;
+    pointer-events: none;
+}
+
+.trending-option, .country-select {
+    margin-top: 1rem;
+    margin-right: 1.5rem;
+}
+
+/* trending movies horizontal scroller */
+.trending-movies-scroller {
+    width: 98%;
+    height: auto;
+    overflow: auto;
+    overscroll-behavior-inline: contain;
+    padding-block: 2rem;
+    padding-inline: 1.3rem;
+    scrollbar-width: none;
+}
+
+.trending-movies-scroller::-webkit-scrollbar {
+    display: none;
+}
+
+.media-element {
+    display: inline-grid;
+    grid-auto-flow: column;
+    grid-auto-columns: 10%;
+    gap: 1.5rem;
+}
+
+.media-container {
+    display: inline-block;
+    cursor: pointer;
+    transition: transform 0.25s;
+    position: relative;
+}
+
+.media-container:hover {
+    transform: scale(1.04);
+}
+
+.media-container > img {
+    border-radius: 0.5rem;
+}
+
+.media-container p {
+    color: black;
+    font-size: 7rem;
+    font-weight: 700;
+    position: absolute;
+    z-index: 10;
+    bottom: 0;
+    left: -1.5rem;
+    -webkit-text-stroke-width: 2px;
+    -webkit-text-stroke-color: var(--text-color);
+    text-shadow: 0 0 2rem black;
+}
+
+.membership-section{
+    position: relative;
+    height: auto;
+    width: auto;
+    padding-block: 2rem;
+    max-width: 120rem;
+    margin: auto;
+}
+
+.membership{
+    margin-top: .5rem;
+    display: flex;
+    flex-direction:row;
+    background:  linear-gradient(127deg, #43172b, #230a25) ;
+    /* padding: 2rem 3rem; */
+    width: 100%;
+    height: 24rem;
+    border-radius: 1rem;
+}
+
+.membership .side-game {
+    width: 50%;
+    height: 100%;
+    padding: 8rem 0 0 3rem ;
+     /* url(https://assets.nflxext.com/ffe/siteui/acquisition/nmhp/games-lg.webp); */
+}
+
+.membership .side-game h2 {
+    font-size: 2rem;
+    font-weight: 700;
+    margin-bottom: 1rem;
+}
+
+.membership .side-game p {
+    font-size: 1rem;
+    font-weight: 500;
+    color: var(--text-secondary-color);
+    margin-top: .5rem;
+}
+
+.membership .side-img {
+    width: 50%;
+    height: 100%;
+    background: radial-gradient(94.35% 90.74% at 100% 100%, rgba(229, 9, 20, 0.50) 0%, rgba(23, 43, 71, 0.00) 100%) ,
+     url(https://assets.nflxext.com/ffe/siteui/acquisition/nmhp/games-lg.webp);
+     object-fit: cover;
+     background-position: left;
+}
+
+/* third section */
+.third-section {
+    position: relative;
+    height: auto;
+    width: auto;
+    padding-block: 2rem;
+    max-width: 120rem;
+    margin: auto;
+}
+
+.third-section h2 {
+    margin-bottom: 1.5rem;
+}
+
+.card {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    gap: 1rem;
+}
+
+.card-container {
+    background: linear-gradient(
+            149deg,
+            #192247 0%,
+            #210e17 96.86%
+    );
+    padding: 0.5rem 1.5rem 6rem 1.5rem;
+    border-radius: 1rem;
+    position: relative;
+}
+
+.card-h3 {
+    font-size: 2rem;
+    font-weight: 900;
+}
+
+.card-paragraph {
+    font-size: 1rem;
+    color: var(--text-secondary-color);
+    font-weight: 400;
+}
+
+#television-core-small {
+    padding: 1rem;
+}
+
+.card-svg {
+    position: absolute;
+    bottom: 1rem;
+    right: 1rem;
+}
+
+.bottom-fixed{
+    position: fixed;
+    bottom: 0;
+    width: 100vw;
+    z-index: 100;
+    background:  linear-gradient(rgba(0, 0, 0, 0) 0%, rgba(0, 0, 0, 0.016) 8.333%, rgba(0, 0, 0, 0.055) 16.67%, rgba(0, 0, 0, 0.125) 25%, rgba(0, 0, 0, 0.224) 33.33%, rgba(0, 0, 0, 0.35) 41.67%, rgba(0, 0, 0, 0.5) 50%, rgba(0, 0, 0, 0.65) 58.33%, rgba(0, 0, 0, 0.776) 66.67%, rgba(0, 0, 0, 0.875) 75%, rgba(0, 0, 0, 0.945) 83.33%, rgba(0, 0, 0, 0.984) 91.67%, rgb(0, 0, 0) 100%);
+    height: 4rem;
+    visibility: hidden;
+}
+
+.get-started-button{
+    width: 90%;
+    padding: .7rem;
+    background-color: var(--btn-color);
+    color: var(--text-color);
+    cursor: pointer;
+    border-radius: 0.25rem;
+    text-align: center;
+}
+
+.get-started-button a {
+    text-decoration: none;
+    color: white;
+    font-weight: 600;
+    text-align: center;
+}
+
+/* forth section */
+.forth-section {
+    position: relative;
+    height: auto;
+    width: auto;
+    padding-block: 2rem;
+    max-width: 120rem;
+    margin: auto;
+}
+
+.forth-section h2 {
+    margin-bottom: 1rem;
+}
+
+.faq-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: .5rem 20% 0 0;
+    padding: 1.4rem;
+    background-color: rgb(45, 45, 45);
+    cursor: pointer;
+    transition: 0.15s;
+}
+
+.faq-container:hover {
+    background-color: rgb(65, 65, 65);
+}
+
+.expand-icon{
+    transition: all cubic-bezier(0.165, 0.84, 0.44, 1) .5s;
+}
+
+.ans-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: .1rem 20% 0 0;
+    padding: 0;
+    height: 0;
+    background-color: rgb(45, 45, 45);
+    cursor: pointer;
+    transition: 0.15s;
+    overflow: hidden;
+    transition: all cubic-bezier(0.165, 0.84, 0.44, 1) .5s;
+}
+
+.expand-svg {
+    color: var(--text-color);
+    fill: var(--text-color);
+}
+
+/* fifth section */
+.fifth-section {
+    padding-block: 1rem;
+    max-width: 120rem;
+    margin: auto;
+}
+
+.fifth-section .promo-content {
+    max-width: 100%;
+    margin-right: 20%;
+}
+
+.fifth-section .email-form-action {
+    padding-top: 1rem;
+    display: grid;
+    grid-template-columns: 1fr 13rem;
+    gap: 0.5rem;
+}
+
+/* sixth section */
+.sixth-section {
+    position: relative;
+    height: auto;
+    width: auto;
+    padding-block: 2rem 6rem;
+    max-width: 120rem;
+    margin: auto;
+}
+
+.footer {
+    padding-inline: 2rem;
+}
+
+.footer h5 {
+    display: inline-block;
+}
+
+.telephone-footer {
+    font-size: 1rem;
+    font-weight: 500;
+    text-decoration: underline;
+    color: var(--text-secondary-color);
+    line-height: 1.5rem;
+}
+
+.list-container {
+    margin-top: 2rem;
+    display: inline-flex;
+    flex-wrap: wrap;
+}
+
+.footer-list-items {
+    width: 25%;
+    line-height: 2rem;
+}
+
+.footer-items {
+    font-size: 0.9rem;
+    font-weight: 500;
+    text-decoration: underline;
+    text-decoration-color: var(--text-secondary-color);
+    text-decoration-thickness: 0;
+    color: var(--text-secondary-color);
+    line-height: 1.5rem;
+}
+
+.lang-select-container {
+    position: relative;
+}
+
+.footer-lang-select {
+    width: 1rem;
+    margin-block: 3rem;
+}
