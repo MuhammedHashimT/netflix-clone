@@ -70,25 +70,24 @@
                 <h3>Starts at ₹149. Cancel anytime.</h3>
                 <h5>Ready to watch? Enter your email to create or restart your membership.</h5>
                 <div class="email-form-action">
-                    <form action="">
-                        <label for="email"></label>
-                        <input type="email" name="email" class="email" id="email" placeholder="Email address">
-                    </form>
-                    
+                    <div class="form-control">
+                      <input type="email" id="emailInput" required>
+                      <label>Email Address</label>
+                    </div>
+                    <span id="emailValidationMessage" class="error-message"></span>
                     <button class="get-started red-btn">
-                                        <a role="button" style="color: white;" href="/sign-in.html">Get Started</a>
-
-                        <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg"
-                             data-mirrorinrtl="true" class="get-started-svg" data-name="ChevronRight"
-                             aria-hidden="true">
-                            <path fill-rule="evenodd" clip-rule="evenodd"
-                                  d="M15.5859 12L8.29303 19.2928L9.70725 20.7071L17.7072 12.7071C17.8948 12.5195 18.0001 12.2652 18.0001 12C18.0001 11.7347 17.8948 11.4804 17.7072 11.2928L9.70724 3.29285L8.29303 4.70706L15.5859 12Z"
-                                  fill="currentColor"></path>
-                        </svg>
+                      <a role="button" style="color: white;" href="/sign-in.html">Get Started</a>
+                      <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg"
+                           data-mirrorinrtl="true" class="get-started-svg" data-name="ChevronRight"
+                           aria-hidden="true">
+                        <path fill-rule="evenodd" clip-rule="evenodd"
+                              d="M15.5859 12L8.29303 19.2928L9.70725 20.7071L17.7072 12.7071C17.8948 12.5195 18.0001 12.2652 18.0001 12C18.0001 11.7347 17.8948 11.4804 17.7072 11.2928L9.70724 3.29285L8.29303 4.70706L15.5859 12Z"
+                              fill="currentColor"></path>
+                      </svg>
                     </button>
-
-                    <p class="validation-email">Invalid Email</p>
-                </div>
+                    <span id="emailValidationMessage2"></span>
+                  </div>
+                  
             </div>
         </div>
     </div>
@@ -698,21 +697,23 @@ Kids profiles come with PIN-protected parental controls that let you restrict th
     <div class="promo-content">
         <h5>Ready to watch? Enter your email to create or restart your membership.</h5>
         <div class="email-form-action">
-            <form action="">
-                <label for="gmail"></label>
-                <input type="email" name="email" class="email" id="gmail" placeholder="Email address">
-            </form>
+            <div class="form-control">
+              <input type="email" id="emailInputT" required>
+              <label>Email Address</label>
+            </div>
+            <span id="emailValidationMessageT" class="error-message"></span>
             <button class="get-started red-btn">
-                <a role="button" style="color: white;" href="/sign-in.html">Get Started</a>
-                <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg"
-                     data-mirrorinrtl="true" class="get-started-svg" data-name="ChevronRight"
-                     aria-hidden="true">
-                    <path fill-rule="evenodd" clip-rule="evenodd"
-                          d="M15.5859 12L8.29303 19.2928L9.70725 20.7071L17.7072 12.7071C17.8948 12.5195 18.0001 12.2652 18.0001 12C18.0001 11.7347 17.8948 11.4804 17.7072 11.2928L9.70724 3.29285L8.29303 4.70706L15.5859 12Z"
-                          fill="currentColor"></path>
-                </svg>
+              <a role="button" style="color: white;" href="/sign-in.html">Get Started</a>
+              <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg"
+                   data-mirrorinrtl="true" class="get-started-svg" data-name="ChevronRight"
+                   aria-hidden="true">
+                <path fill-rule="evenodd" clip-rule="evenodd"
+                      d="M15.5859 12L8.29303 19.2928L9.70725 20.7071L17.7072 12.7071C17.8948 12.5195 18.0001 12.2652 18.0001 12C18.0001 11.7347 17.8948 11.4804 17.7072 11.2928L9.70724 3.29285L8.29303 4.70706L15.5859 12Z"
+                      fill="currentColor"></path>
+              </svg>
             </button>
-        </div>
+            <span id="emailValidationMessage2T"></span>
+          </div>
     </div>
 </div>
 <div class="sixth-section">

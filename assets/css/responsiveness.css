@@ -588,7 +588,7 @@
     .ans-container {
         margin-right: 0;
         width: 100%;
-        padding: 1rem;
+        /* padding: 1rem; */
     }
 
     .fifth-section .promo-content {
@@ -609,5 +609,21 @@
 
     .footer-list-items {
         width: 100%;
+    }
+
+    #emailValidationMessage{
+        display: inline;
+    }
+
+    #emailValidationMessage2{
+        display: none;
+    }
+
+    #emailValidationMessageT{
+        display: inline;
+    }
+
+    #emailValidationMessage2T{
+        display: none;
     }
 }
